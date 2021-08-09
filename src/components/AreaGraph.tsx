@@ -3,7 +3,7 @@
 import React from 'react';
 import { AreaChart, Area, YAxis, XAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-class AreaRechartComponent extends React.Component {
+class AreaGraph extends React.Component {
 
   data = [
     {
@@ -76,4 +76,4 @@ class AreaRechartComponent extends React.Component {
   };
 }
 
-export default AreaRechartComponent;
+export default AreaGraph;

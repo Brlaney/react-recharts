@@ -1,10 +1,10 @@
-// src/components/PieRechartComponent.tsx
+// src/components/PieGraph.tsx
 
 import React from 'react';
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 
 
-class PieRechartComponent extends React.Component {
+class PieGraph extends React.Component {
   COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF'];
   pieData = [
     {
@@ -62,4 +62,4 @@ class PieRechartComponent extends React.Component {
   };
 }
 
-export default PieRechartComponent;
+export default PieGraph;

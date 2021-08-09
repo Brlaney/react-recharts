@@ -1,4 +1,4 @@
-// src/components/LineRechartComponent.tsx
+// src/components/LineGraph.tsx
 
 import React from 'react';
 import {
@@ -12,7 +12,7 @@ import {
 } from 'recharts';
 
 
-class LineRechartComponent extends React.Component {
+class LineGraph extends React.Component {
   data = [
     { 'name': 'Jan 2019', 'Product A': 3432, 'Procuct B': 2342 },
     { 'name': 'Feb 2019', 'Product A': 2342, 'Procuct B': 3246 },
@@ -25,8 +25,8 @@ class LineRechartComponent extends React.Component {
     return (
       <LineChart
         id='line'
-        width={730}
-        height={250}
+        width={800}
+        height={350}
         data={this.data}
         margin={{
           top: 20,
@@ -47,4 +47,4 @@ class LineRechartComponent extends React.Component {
   };
 }
 
-export default LineRechartComponent;
+export default LineGraph;

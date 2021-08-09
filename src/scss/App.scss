@@ -1,24 +1,29 @@
 .App {
-  margin: 1.45rem 0 1.45rem 0;
-  text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  #container {
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+    #title {
+      color: darkslategray;
+      margin-bottom: 0.44rem;
+      padding-bottom: 0.44rem;
+    }
+    #subtitle {
+      color: darkslategray;
+    }
+    #chart-container {
+      padding: 2rem;
+      align-self: center;
+    }
+  }
 }
-
-// #line {
-//   margin: 1.45rem 0 1.45rem 0;
-//   // padding: 1rem 0 1rem 0;
-// }
-
-// #pie {
-//   margin: 20px 0 30px 0;
-//   // padding: 1rem;
-// }
-
-// #area {
-//   margin: 1.45rem 0 1.45rem 0;
-//   // padding: 1rem 0 1rem 0;
-// }
