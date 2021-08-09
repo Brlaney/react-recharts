@@ -3,14 +3,8 @@
 import React from 'react';
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 
-interface Props {
-  // any props that come into the component
-  active: string;
-  payload: string;
-  label: string;
-};
 
-class PieRechartComponent extends React.Component<Props> {
+class PieRechartComponent extends React.Component {
   COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF'];
   pieData = [
     {
@@ -37,7 +31,12 @@ class PieRechartComponent extends React.Component<Props> {
 
   render() {
     return (
-      <PieChart width={730} height={300}>
+      <PieChart
+        id='pie'
+        width={730}
+        height={300}
+        margin={{ top: 20, right: 0, left: 0, bottom: 20 }}
+      >
         <Pie
           data={this.pieData}
           color='#000000'

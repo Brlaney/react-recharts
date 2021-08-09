@@ -24,14 +24,15 @@ class LineRechartComponent extends React.Component {
   render() {
     return (
       <LineChart
+        id='line'
         width={730}
         height={250}
         data={this.data}
         margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5
+          top: 20,
+          right: 0,
+          left: 0,
+          bottom: 20
         }}
       >
         <CartesianGrid strokeDasharray='3 3' />
