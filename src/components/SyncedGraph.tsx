@@ -8,7 +8,7 @@ export default function SyncedGraph() {
   return (
     <div className='container'>
 
-      <h4>A demo of synchronized AreaCharts</h4>
+      {/* Graph 1 (top-row) */}
       <LineChart
         width={500}
         height={200}
@@ -18,13 +18,13 @@ export default function SyncedGraph() {
         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
       >
         <CartesianGrid className='grid' strokeDasharray='3 3' />
-        <XAxis className='xAxis' dataKey='name' color='inherit' />
-        <YAxis className='yAxis' color='inherit' />
+        <XAxis className='xAxis' dataKey='id' />
+        <YAxis className='yAxis' />
         <Tooltip />
         <Line type='monotone' dataKey='uv' stroke='#A8293E' fill='#454655' />
       </LineChart>
 
-      <p>Maybe some other content</p>
+      {/* Graph 2 (middle-row) */}
       <LineChart
         width={500}
         height={200}
@@ -34,13 +34,15 @@ export default function SyncedGraph() {
         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
       >
         <CartesianGrid className='grid' strokeDasharray='3 3' />
-        <XAxis className='xAxis' color='inherit' dataKey='id' />
-        <YAxis className='yAxis' color='inherit' />
+        <XAxis className='xAxis' dataKey='id' />
+        <YAxis className='yAxis' />
         <Tooltip />
         <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#714797' />
+        {/* Un-comment below to display slide-feature */}
         {/* <Brush /> */}
       </LineChart>
 
+      {/* Graph 3 (bottom-row) */}
       <AreaChart
         width={500}
         height={200}
@@ -49,8 +51,8 @@ export default function SyncedGraph() {
         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
       >
         <CartesianGrid className='grid' strokeDasharray='3 3' />
-        <XAxis className='xAxis' color='inherit' dataKey='name' />
-        <YAxis className='yAxis' color='inherit' />
+        <XAxis className='xAxis' dataKey='id' />
+        <YAxis className='yAxis' />
         <Tooltip />
         <Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#D0A616' />
       </AreaChart>

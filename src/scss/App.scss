@@ -1,21 +1,28 @@
+@import './theme/theme';
+
 .App {
+  font-family: $primary-font;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-color: #454655;
+  background-color: $bg-dark;
   color: lightgrey;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  flex: 1;
   text-align: center;
   align-items: center;
-  align-content: center;
-  flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   padding: 0;
   margin: 0;
   #container {
     margin: 0;
-    padding: 1rem;
-    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     #title {
       color: lightgrey;
       margin-bottom: 0;
@@ -29,10 +36,14 @@
       padding: 0 0 1.6rem 0;
     }
     #chart-container {
-      background-color: rgba(255, 255, 255, 0.276);
-      padding: 2rem;
+      background-color: $bg-light;
+      padding: 2rem 1rem 1.5rem 1rem;
       align-self: center;
       border-radius: 8px;
+      .parent {
+          max-width: 1200px;
+          margin: 10px 'auto' 0 'auto'; 
+      }
     }
   }
 }
