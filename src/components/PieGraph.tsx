@@ -1,34 +1,11 @@
 // src/components/PieGraph.tsx
 
 import React from 'react';
+import { colors, data } from '../lib/pie'
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 
 
 class PieGraph extends React.Component {
-  COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF'];
-  pieData = [
-    {
-      'name': 'Chrome',
-      'value': 68.85
-    },
-    {
-      'name': 'Firefox',
-      'value': 7.91
-    },
-    {
-      'name': 'Edge',
-      'value': 6.85
-    },
-    {
-      'name': 'Internet Explorer',
-      'value': 6.14
-    },
-    {
-      'name': 'Others',
-      'value': 10.25
-    }
-  ];
-
   render() {
     return (
       <PieChart
@@ -38,7 +15,7 @@ class PieGraph extends React.Component {
         margin={{ top: 20, right: 0, left: 0, bottom: 20 }}
       >
         <Pie
-          data={this.pieData}
+          data={data}
           color='#000000'
           dataKey='value'
           nameKey='name'
@@ -48,10 +25,10 @@ class PieGraph extends React.Component {
           fill='#8884d8'
         >
           {
-            this.pieData.map((entry, index) =>
+            data.map((entry, index) =>
               <Cell
                 key={`cell-${index}`}
-                fill={this.COLORS[index % this.COLORS.length]}
+                fill={colors[index % colors.length]}
               />
             )
           }

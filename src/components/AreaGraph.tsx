@@ -1,37 +1,10 @@
 // src/components/area.rechart.js
 
 import React from 'react';
+import { data } from '@/lib/data/area'
 import { AreaChart, Area, YAxis, XAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 class AreaGraph extends React.Component {
-
-  data = [
-    {
-      'name': 'Jan 2019',
-      'Product A': 3432,
-      'Procuct B': 2342
-    },
-    {
-      'name': 'Feb 2019',
-      'Product A': 2342,
-      'Procuct B': 3246
-    },
-    {
-      'name': 'Mar 2019',
-      'Product A': 4565,
-      'Procuct B': 4556
-    },
-    {
-      'name': 'Apr 2019',
-      'Product A': 6654,
-      'Procuct B': 4465
-    },
-    {
-      'name': 'May 2019',
-      'Product A': 8765,
-      'Procuct B': 4553
-    }
-  ]
 
   render() {
     return (
@@ -39,17 +12,17 @@ class AreaGraph extends React.Component {
         id='area'
         width={730}
         height={250}
-        data={this.data}
+        data={data}
         margin={{ top: 20, right: 0, left: 0, bottom: 20 }}
       >
         <defs>
           <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>
-            <stop offset='5%' stopColor='#8884d8' stopOpacity={0.8} />
-            <stop offset='95%' stopColor='#8884d8' stopOpacity={0} />
+            <stop offset='5%' stopColor='#A8293E' stopOpacity={0.8} />
+            <stop offset='95%' stopColor='#A8293E' stopOpacity={0} />
           </linearGradient>
           <linearGradient id='colorPv' x1='0' y1='0' x2='0' y2='1'>
-            <stop offset='5%' stopColor='#82ca9d' stopOpacity={0.8} />
-            <stop offset='95%' stopColor='#82ca9d' stopOpacity={0} />
+            <stop offset='5%' stopColor='#485696' stopOpacity={0.8} />
+            <stop offset='95%' stopColor='#485696' stopOpacity={0} />
           </linearGradient>
         </defs>
         <XAxis dataKey='name' />
@@ -60,14 +33,14 @@ class AreaGraph extends React.Component {
         <Area
           type='monotone'
           dataKey='Product A'
-          stroke='#8884d8'
+          stroke='#A8293E'
           fillOpacity={1}
           fill='url(#colorUv)'
         />
         <Area
           type='monotone'
           dataKey='Procuct B'
-          stroke='#82ca9d'
+          stroke='#485696'
           fillOpacity={1}
           fill='url(#colorPv)'
         />

@@ -1,13 +1,19 @@
-import React from 'react';
-import LineGraph from '../src/components/LineGraph'
-// import AreaGraph from '../src/components/AreaGraph';
-// import PieGraph from './components/PieGraph';
-import '../src/scss/App.scss';
+import React, { useState } from 'react';
+
+// import LineGraph from '@/components/LineGraph'
+// import AreaGraph from '@/components/AreaGraph';
+// import PieGraph from '@/components/PieGraph';
+
+import '@/styles/App.scss';
+import Try from './components/SyncedGraph'
 
 // const swift = [<LineGraph />, <AreaGraph />, <PieGraph />];
 // const labels = ['Line graph', 'Area graph', 'Pie chart'];
 
+
 function App() {
+  const [index, setIndex] = useState<number>(1);
+
   return (
     <div className='App'>
       <div
@@ -21,10 +27,10 @@ function App() {
           ReCharts Examples
         </h1>
         <h2 id='subtitle' className='uk-heading-small'>
-          Line graph
+          Synced graph
         </h2>
         <div id='chart-container' className='uk-card uk-card-default uk-card-body'>
-          <LineGraph />
+          <Try />
         </div>
       </div>
     </div>
