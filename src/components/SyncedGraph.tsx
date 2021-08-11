@@ -38,7 +38,7 @@ export default function SyncedGraph() {
         <YAxis className='yAxis' color='inherit' />
         <Tooltip />
         <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#714797' />
-        <Brush />
+        {/* <Brush /> */}
       </LineChart>
 
       <AreaChart

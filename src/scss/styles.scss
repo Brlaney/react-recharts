@@ -9,6 +9,7 @@
   }
   .line {
     color: lightgrey;
+    padding-bottom: 0.5rem;
     .grid {
       color: lightgrey;
       width: 100%;
@@ -23,6 +24,13 @@
   }
   p {
     font-size: 1rem;
+    color: lightgrey;
+  }
+}
+
+#chart-container {
+  color: lightgrey;
+  tspan {
     color: lightgrey;
   }
 }
