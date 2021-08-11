@@ -1,5 +1,5 @@
 // src/components/LineGraph.tsx
-import { data } from '@/lib/data/line'
+import { data } from '../lib/data/line'
 import React from 'react';
 import {
   LineChart,

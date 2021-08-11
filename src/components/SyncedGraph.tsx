@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/styles/styles.scss';
+import '../scss/styles.scss';
 import { data } from '../lib/data/synced';
 import {
   LineChart,
@@ -16,7 +16,8 @@ import {
 
 export default function SyncedGraph() {
   return (
-    <div>
+    <div className='container'>
+
       <h4>A demo of synchronized AreaCharts</h4>
       <LineChart
         width={500}
@@ -37,6 +38,7 @@ export default function SyncedGraph() {
         <Tooltip />
         <Line type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
       </LineChart>
+
       <p>Maybe some other content</p>
       <LineChart
         width={500}

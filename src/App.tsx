@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 // import AreaGraph from '@/components/AreaGraph';
 // import PieGraph from '@/components/PieGraph';
 
-import '@/styles/App.scss';
+import './scss/App.scss';
 import Try from './components/SyncedGraph'
 
 // const swift = [<LineGraph />, <AreaGraph />, <PieGraph />];

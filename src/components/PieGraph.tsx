@@ -1,7 +1,7 @@
 // src/components/PieGraph.tsx
 
 import React from 'react';
-import { colors, data } from '../lib/pie'
+import { colors, data } from '../lib/data/pie'
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 
 
