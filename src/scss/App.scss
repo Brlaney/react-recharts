@@ -1,6 +1,8 @@
 .App {
   overflow-y: hidden;
   overflow-x: hidden;
+  background-color: #454655;
+  color: lightgrey;
   min-height: 100vh;
   display: flex;
   text-align: center;
@@ -11,17 +13,23 @@
   padding: 0;
   margin: 0;
   #container {
-    margin: 2rem 0 0 0;
+    margin: 0;
     padding: 1rem;
+    width: 100%;
     #title {
-      color: darkslategray;
-      margin-bottom: 0.44rem;
-      padding-bottom: 0.44rem;
+      color: lightgrey;
+      margin-bottom: 0;
+      padding-bottom: 0.3rem;
     }
     #subtitle {
-      color: darkslategray;
+      font-size: 1.5rem;
+      text-align: left;
+      color: lightgrey;
+      margin: 0;
+      padding: 0 0 1.6rem 0;
     }
     #chart-container {
+      background-color: rgba(255, 255, 255, 0.276);
       padding: 2rem;
       align-self: center;
     }

@@ -1,19 +1,28 @@
 
 .container {
+  color: lightgrey;
   width: 100%;
   height: 100%;
   h4 {
     font-size: 1.1rem;
-    color: darkslategray;
+    color: lightgrey;
   }
   .line {
+    color: lightgrey;
     .grid {
+      color: lightgrey;
       width: 100%;
       height: 100%;
+    }
+    .xAxis {
+      color: lightgrey;
+    }
+    .yAxis {
+      color: lightgrey;
     }
   }
   p {
     font-size: 1rem;
-    color: darkslategray;
+    color: lightgrey;
   }
 }
