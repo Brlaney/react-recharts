@@ -1,11 +1,9 @@
-// src/components/area.rechart.js
-
 import React from 'react';
-import { data } from '../lib/data/area'
+import { data } from '../lib/data/area';
 import { AreaChart, Area, YAxis, XAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-class AreaGraph extends React.Component {
 
+class AreaGraph extends React.Component {
   render() {
     return (
       <AreaChart

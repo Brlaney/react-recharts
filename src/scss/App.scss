@@ -15,6 +15,7 @@
   justify-content: center;
   padding: 0;
   margin: 0;
+
   #container {
     margin: 0;
     padding: 0;
@@ -23,11 +24,13 @@
     justify-content: center;
     align-items: center;
     width: 60%;
+
     #title {
       color: lightgrey;
       margin-bottom: 0;
       padding-bottom: 0.3rem;
     }
+
     #subtitle {
       font-size: 1.5rem;
       text-align: left;
@@ -35,14 +38,17 @@
       margin: 0;
       padding: 0 0 1.6rem 0;
     }
+
     #chart-container {
+      flex: 1;
       background-color: $bg-light;
       padding: 2rem 1rem 1.5rem 1rem;
       align-self: center;
       border-radius: 8px;
+
       .parent {
-          max-width: 1200px;
-          margin: 10px 'auto' 0 'auto'; 
+        max-width: 1200px;
+        margin: 10px 0 0 0;
       }
     }
   }
