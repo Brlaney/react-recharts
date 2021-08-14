@@ -7,7 +7,6 @@ class PieGraph extends React.Component {
   render() {
     return (
       <PieChart
-        id='pie'
         width={1000}
         height={300}
         margin={{ top: 20, right: 100, left: 80, bottom: 20 }}

@@ -3,6 +3,7 @@ import React from 'react';
 import LineGraph from './components/LineGraph';
 import AreaGraph from './components/AreaGraph';
 import PieGraph from './components/PieGraph';
+import PieGraphTwo from './components/PieGraphTwo';
 import Carousel from './components/Carousel';
 import './scss/App.scss';
 
@@ -23,6 +24,7 @@ function App() {
               <LineGraph />
               <AreaGraph />
               <PieGraph />
+              <PieGraphTwo />
             </Carousel>
           </div>
         </div>
