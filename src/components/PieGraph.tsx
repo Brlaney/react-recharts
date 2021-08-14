@@ -8,9 +8,9 @@ class PieGraph extends React.Component {
     return (
       <PieChart
         id='pie'
-        width={730}
+        width={1000}
         height={300}
-        margin={{ top: 20, right: 0, left: 0, bottom: 20 }}
+        margin={{ top: 20, right: 100, left: 80, bottom: 20 }}
       >
         <Pie
           data={data}

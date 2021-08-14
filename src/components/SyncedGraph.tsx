@@ -1,7 +1,17 @@
 import React from 'react';
 import '../scss/styles.scss';
 import { data } from '../lib/data/synced';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Brush, AreaChart, Area } from 'recharts';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  // Brush,
+  AreaChart,
+  Area
+} from 'recharts';
 
 
 export default function SyncedGraph() {

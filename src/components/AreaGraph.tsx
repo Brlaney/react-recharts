@@ -1,6 +1,14 @@
 import React from 'react';
 import { data } from '../lib/data/area';
-import { AreaChart, Area, YAxis, XAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import {
+  AreaChart,
+  Area,
+  YAxis,
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend
+} from 'recharts';
 
 
 class AreaGraph extends React.Component {
@@ -8,10 +16,10 @@ class AreaGraph extends React.Component {
     return (
       <AreaChart
         id='area'
-        width={730}
-        height={250}
+        width={1000}
+        height={350}
         data={data}
-        margin={{ top: 20, right: 0, left: 0, bottom: 20 }}
+        margin={{ top: 20, right: 100, left: 100, bottom: 20 }}
       >
         <defs>
           <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>
