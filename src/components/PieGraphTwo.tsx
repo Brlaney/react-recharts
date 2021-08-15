@@ -2,9 +2,7 @@ import React from 'react';
 import {
   PieChart,
   Pie,
-  // Sector,
   Cell,
-  ResponsiveContainer
 } from 'recharts';
 
 const data = [
@@ -42,11 +40,10 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 class PieGraphTwo extends React.Component {
   render() {
     return (
-      <ResponsiveContainer width='100%' height='100%'>
         <PieChart
           width={1000}
-          height={350}
-          margin={{ top: 20, right: 100, left: 80, bottom: 20 }}
+          height={450}
+          margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
         >
           <Pie
             data={data}
@@ -63,7 +60,6 @@ class PieGraphTwo extends React.Component {
             ))}
           </Pie>
         </PieChart>
-      </ResponsiveContainer>
     )
   };
 }
