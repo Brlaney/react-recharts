@@ -17,7 +17,7 @@ class LineGraph extends React.Component {
       <LineChart
         id='line'
         width={1000}
-        height={350}
+        height={400}
         data={data}
         margin={{ top: 20, right: 100, left: 30, bottom: 20 }}
       >
@@ -25,9 +25,12 @@ class LineGraph extends React.Component {
         <XAxis dataKey='name' />
         <YAxis />
         <Tooltip />
-        <Legend />
-        <Line type='monotone' dataKey='Product A' stroke='#485696' />
-        <Line type='monotone' dataKey='Procuct B' stroke='#A8293E' />
+        <Legend id='legend' />
+        <Line type='monotone' dataKey='Total' stroke='#485696' />
+        <Line type='monotone' dataKey='Heroin' stroke='#A8293E' />
+        <Line type='monotone' dataKey='Natural-synth' stroke='#12ba41' />
+        <Line type='monotone' dataKey='Methadone' stroke='#54cec8' />
+        <Line type='monotone' dataKey='Other' stroke='#D3199B' />
       </LineChart>
     )
   };

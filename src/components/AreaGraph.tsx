@@ -17,7 +17,7 @@ class AreaGraph extends React.Component {
       <AreaChart
         id='area'
         width={1000}
-        height={350}
+        height={400}
         data={data}
         margin={{ top: 20, right: 100, left: 100, bottom: 20 }}
       >
@@ -35,7 +35,7 @@ class AreaGraph extends React.Component {
         <YAxis />
         <CartesianGrid strokeDasharray='3 3' />
         <Tooltip />
-        <Legend />
+        <Legend id='legend' />
         <Area
           type='monotone'
           dataKey='Product A'

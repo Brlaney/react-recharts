@@ -51,7 +51,7 @@ class PieGraphTwo extends React.Component {
             cy='50%'
             labelLine={false}
             label={renderCustomizedLabel}
-            outerRadius={80}
+            outerRadius={160}
             fill='#8884d8'
             dataKey='value'
           >

@@ -1,7 +1,22 @@
 export const data = [
-  { 'name': 'Jan 2019', 'Product A': 3432, 'Procuct B': 2342 },
-  { 'name': 'Feb 2019', 'Product A': 2342, 'Procuct B': 3246 },
-  { 'name': 'Mar 2019', 'Product A': 4565, 'Procuct B': 4556 },
-  { 'name': 'Apr 2019', 'Product A': 6654, 'Procuct B': 4465 },
-  { 'name': 'May 2019', 'Product A': 8765, 'Procuct B': 4553 }
+    { 'name': '1999', 'Total': 8050, 'Heroin': 1960, 'Natural-synth' :2749, 'Methadone': 784, 'Other': 730},
+    { 'name': '2000', 'Total': 8407, 'Heroin': 1842, 'Natural-synth' :2917, 'Methadone': 986, 'Other': 782},
+    { 'name': '2001', 'Total': 9496, 'Heroin': 1779, 'Natural-synth' :3479, 'Methadone': 1456, 'Other': 957},
+    { 'name': '2002', 'Total': 11920, 'Heroin': 2089, 'Natural-synth' :4416, 'Methadone': 2358, 'Other': 1295},
+    { 'name': '2003', 'Total': 12940, 'Heroin': 2080, 'Natural-synth' :4867, 'Methadone': 2972, 'Other': 1400},
+    { 'name': '2004', 'Total': 13756, 'Heroin': 1878, 'Natural-synth' :5231, 'Methadone': 3845, 'Other': 1664},
+    { 'name': '2005', 'Total': 14918, 'Heroin': 2009, 'Natural-synth' :5774, 'Methadone': 4460, 'Other': 1742},
+    { 'name': '2006', 'Total': 17545, 'Heroin': 2088, 'Natural-synth' :7017, 'Methadone': 5406, 'Other': 2707},
+    { 'name': '2007', 'Total': 18516, 'Heroin': 2399, 'Natural-synth' :8158, 'Methadone': 5518, 'Other': 2213},
+    { 'name': '2008', 'Total': 19582, 'Heroin': 3041, 'Natural-synth' :9119, 'Methadone': 4924, 'Other': 2306},
+    { 'name': '2009', 'Total': 20422, 'Heroin': 3278, 'Natural-synth' :9735, 'Methadone': 4696, 'Other': 2946},
+    { 'name': '2010', 'Total': 21089, 'Heroin': 3036, 'Natural-synth' :10943, 'Methadone': 4577, 'Other': 3007},
+    { 'name': '2011', 'Total': 22784, 'Heroin': 4397, 'Natural-synth' :11693, 'Methadone': 4418, 'Other': 2666},
+    { 'name': '2012', 'Total': 23166, 'Heroin': 5925, 'Natural-synth' :11140, 'Methadone': 3932, 'Other': 2628},
+    { 'name': '2013', 'Total': 25052, 'Heroin': 8257, 'Natural-synth' :11346, 'Methadone': 3591, 'Other': 3105},
+    { 'name': '2014', 'Total': 28647, 'Heroin': 10574, 'Natural-synth' :12159, 'Methadone': 3400, 'Other': 5544},
+    { 'name': '2015', 'Total': 33091, 'Heroin': 12989, 'Natural-synth' :12727, 'Methadone': 3301, 'Other': 9580},
+    { 'name': '2016', 'Total': 42249, 'Heroin': 15469, 'Natural-synth' :14487, 'Methadone': 3373, 'Other': 19413},
+    { 'name': '2017', 'Total': 47600, 'Heroin': 15482, 'Natural-synth' :14495, 'Methadone': 3194, 'Other': 28466},
+    { 'name': '2018', 'Total': 46802, 'Heroin': 14996, 'Natural-synth' :12552, 'Methadone': 3023, 'Other': 31335}
 ];

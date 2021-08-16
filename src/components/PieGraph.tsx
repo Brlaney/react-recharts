@@ -8,7 +8,7 @@ class PieGraph extends React.Component {
     return (
       <PieChart
         width={1000}
-        height={300}
+        height={400}
         margin={{ top: 20, right: 100, left: 80, bottom: 20 }}
       >
         <Pie
@@ -30,7 +30,7 @@ class PieGraph extends React.Component {
             )
           }
         </Pie>
-        <Legend />
+        <Legend id='legend' />
       </PieChart>
     )
   };
