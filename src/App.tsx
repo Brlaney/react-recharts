@@ -13,7 +13,8 @@ const titles = [
 ];
 
 const App = () => {
-  const [title, setTitle] = useState<string>(titles[0]);
+  const [title] = useState<string>(titles[0]);
+  // [title, setTitle]
 
   return (
     <div className='App'>
