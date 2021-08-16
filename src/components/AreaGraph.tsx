@@ -1,14 +1,6 @@
 import React from 'react';
 import { data } from '../lib/data/area';
-import {
-  AreaChart,
-  Area,
-  YAxis,
-  XAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend
-} from 'recharts';
+import { AreaChart, Area, YAxis, XAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 
 class AreaGraph extends React.Component {
@@ -31,7 +23,7 @@ class AreaGraph extends React.Component {
             <stop offset='95%' stopColor='#485696' stopOpacity={0} />
           </linearGradient>
         </defs>
-        <XAxis dataKey='date' />
+        <XAxis dataKey='label' />
         <YAxis />
         <CartesianGrid strokeDasharray='3 3' />
         <Tooltip />

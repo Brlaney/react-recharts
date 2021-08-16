@@ -1,11 +1,10 @@
 export const colors = [
-  '#016FB9', '#399E5A', '#9B287B', '#D0A616', '#714797'
+  '#4d983f','#212c62', '#0e76bd', '#cf0921'
 ];
 
 export const data = [
-  { 'name': 'Chrome', 'value': 68.85 },
-  { 'name': 'Firefox', 'value': 7.91 },
-  { 'name': 'Edge', 'value': 6.85 },
-  { 'name': 'Internet Explorer', 'value': 6.14 },
-  { 'name': 'Others', 'value': 10.25 }
+  { name: 'Group A', value: 400 },
+  { name: 'Group B', value: 330 },
+  { name: 'Group C', value: 270 },
+  { name: 'Group D', value: 180 },
 ];
