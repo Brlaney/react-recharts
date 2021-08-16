@@ -21,7 +21,7 @@ export default function SyncedGraph() {
       {/* Graph 1 (top-row) */}
       <LineChart
         width={500}
-        height={200}
+        height={450}
         className='line'
         data={data}
         syncId='anyId'

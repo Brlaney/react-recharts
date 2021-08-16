@@ -17,7 +17,7 @@ class LineGraph extends React.Component {
       <LineChart
         id='line'
         width={1000}
-        height={400}
+        height={450}
         data={data}
         margin={{ top: 20, right: 100, left: 30, bottom: 20 }}
       >

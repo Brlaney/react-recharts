@@ -20,43 +20,28 @@
   #chart-title {
     color: $light;
     font-size: 2.22rem;
-    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.4rem;
   }
 
   #container {
     margin: 0;
-    padding: 0;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    #title {
-      color: lightgrey;
-      margin-bottom: 0;
-      padding-bottom: 0.3rem;
-    }
-
-    #subtitle {
-      font-size: 1.5rem;
-      text-align: left;
-      color: lightgrey;
-      margin: 0;
-      padding: 0 0 1.6rem 0;
-    }
-
     #chart-container {
+      display: flex;
       flex: 1;
       background-color: $bg-light;
-      padding: 2rem 1rem 1.5rem 1rem;
+      padding: 1rem;
       align-self: center;
       border-radius: 8px;
 
       .parent {
         max-width: 1000px;
-        margin: 10px 0 0 0;
       }
     }
   }

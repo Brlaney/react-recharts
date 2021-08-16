@@ -9,7 +9,7 @@ class AreaGraph extends React.Component {
       <AreaChart
         id='area'
         width={1000}
-        height={400}
+        height={450}
         data={data}
         margin={{ top: 20, right: 100, left: 100, bottom: 20 }}
       >
