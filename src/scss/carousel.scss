@@ -28,6 +28,8 @@
 
     .left-arrow:hover {
       cursor: pointer;
+      transition:all 1.5s;
+      box-shadow: rgba(0, 0, 0, 0.15) 2.1px 2.2px 3.2px;
     }
 
     .carousel-content-wrapper {
@@ -72,7 +74,8 @@
 
     .right-arrow:hover {
       cursor: pointer;
-
+      transition:all 1.5s;
+      box-shadow: rgba(0, 0, 0, 0.15) 2.1px 2.2px 3.2px;
     }
 
   }
