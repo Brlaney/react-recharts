@@ -19,8 +19,15 @@
       width: 48px;
       height: 48px;
       border-radius: 24px;
-      background-color: white;
+      color: $white;
+      background-color: $bg-dark;
       border: 1px solid #ddd;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      transition:all 1.5s;
+    }
+
+    .left-arrow:hover {
+      cursor: pointer;
     }
 
     .carousel-content-wrapper {
@@ -56,8 +63,16 @@
       width: 48px;
       height: 48px;
       border-radius: 24px;
-      background-color: white;
+      color: $white;
+      background-color: $bg-dark;
       border: 1px solid #ddd;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      transition:all 1.5s;
+    }
+
+    .right-arrow:hover {
+      cursor: pointer;
+
     }
 
   }

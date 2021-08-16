@@ -29,7 +29,7 @@ class LineGraph extends React.Component {
         <Line type='monotone' dataKey='Total' stroke='#485696' />
         <Line type='monotone' dataKey='Heroin' stroke='#A8293E' />
         <Line type='monotone' dataKey='Natural-synth' stroke='#12ba41' />
-        <Line type='monotone' dataKey='Methadone' stroke='#54cec8' />
+        <Line type='monotone' dataKey='Methadone' stroke='#0b857f' />
         <Line type='monotone' dataKey='Other' stroke='#D3199B' />
       </LineChart>
     )

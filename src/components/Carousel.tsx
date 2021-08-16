@@ -29,7 +29,7 @@ const Carousel = (props: { children: any }) => {
 
         {/* Left arrow (carousel) */}
         {currentIndex > 0 &&
-          <button onClick={prev} className="left-arrow">
+          <button onClick={prev} className='left-arrow'>
             &lt;
           </button>}
 
@@ -45,10 +45,9 @@ const Carousel = (props: { children: any }) => {
 
         {/* Right arrow (carousel) */}
         {currentIndex < (length - 1) &&
-          <button onClick={next} className="right-arrow">
+          <button onClick={next} className='right-arrow'>
             &gt;
           </button>}
-
       </div>
     </div>
   )
