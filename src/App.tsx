@@ -27,7 +27,7 @@ const App = () => {
       >
         <div
           id='chart-container'
-          className='uk-card uk-card-default uk-card-body'
+          className='uk-card uk-card-default uk-card-body uk-box-shadow-large'
         >
           <div className='parent'>
             <Carousel>
