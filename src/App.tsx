@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
-// import SyncedGraph from './components/SyncedGraph';
-import LineGraph from './components/LineGraph';
-import AreaGraph from './components/AreaGraph';
-import PieGraph from './components/PieGraph';
-import Carousel from './components/Carousel';
-import './scss/App.scss';
+import React, { useState } from 'react'
+// import SyncedGraph from './components/SyncedGraph'
+import LineGraph from './components/LineGraph'
+import AreaGraph from './components/AreaGraph'
+import PieGraph from './components/PieGraph'
+import Carousel from './components/Carousel'
+import useMediaQuery from './lib/hooks/useMediaQuery'
+import './scss/App.scss'
 
 const titles = [
   'Opiod Overdoses in the United States',
   'Covid-19 Data in Tennessee',
   'Sample Pie Chart'
-];
+]
 
 const App = () => {
-  const [title] = useState<string>(titles[0]);
+  const [title] = useState<string>(titles[0])
+  const isDesktop = useMediaQuery('(min-width: 960px)')
   // [title, setTitle]
 
   return (
@@ -39,7 +41,7 @@ const App = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

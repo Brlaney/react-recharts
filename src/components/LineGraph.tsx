@@ -1,5 +1,6 @@
 import { data } from '../lib/data/line';
 import React from 'react';
+import useMediaQuery from '../lib/hooks/useMediaQuery'
 import {
   LineChart,
   Line,
@@ -11,6 +12,7 @@ import {
 } from 'recharts';
 
 
+const isDesktop = useMediaQuery('(min-width: 1100px)')
 class LineGraph extends React.Component {
   render() {
     return (
