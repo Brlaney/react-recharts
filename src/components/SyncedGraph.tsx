@@ -1,6 +1,6 @@
-import React from 'react';
-import '../scss/styles.scss';
-import { data } from '../lib/data/synced';
+import React from 'react'
+import '../scss/styles.scss'
+import { data } from '../lib/data/synced'
 import {
   LineChart,
   Line,
@@ -8,10 +8,9 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  // Brush,
   AreaChart,
   Area
-} from 'recharts';
+} from 'recharts'
 
 
 export default function SyncedGraph() {
@@ -48,8 +47,6 @@ export default function SyncedGraph() {
         <YAxis className='yAxis' />
         <Tooltip />
         <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#714797' />
-        {/* Un-comment below to display slide-feature */}
-        {/* <Brush /> */}
       </LineChart>
 
       {/* Graph 3 (bottom-row) */}
@@ -67,5 +64,5 @@ export default function SyncedGraph() {
         <Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#D0A616' />
       </AreaChart>
     </div>
-  );
+  )
 }

@@ -47,6 +47,16 @@
   }
 }
 
-#legend {
-  padding: 0.77rem;
+#areaChart {
+  width: 100%;
+  #titleOne {
+    color: $text-med;
+    font-size: 1.4rem;
+    margin-bottom: 0.12rem;
+  }
+  #titleTwo {
+    color: $text-med;
+    font-size: 1.4rem;
+    margin-bottom: 0.12rem;
+  }
 }

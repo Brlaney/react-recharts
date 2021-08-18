@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import '../scss/carousel.scss';
+import React, { useState, useEffect } from 'react'
+import '../scss/carousel.scss'
 
 
 const Carousel = (props: { children: any }) => {
@@ -30,7 +30,7 @@ const Carousel = (props: { children: any }) => {
         {/* Left arrow (carousel) */}
         {currentIndex > 0 &&
           <button onClick={prev} className='left-arrow'>
-            &lt;
+            &lt
           </button>}
 
         {/* Carousel */}
@@ -46,11 +46,11 @@ const Carousel = (props: { children: any }) => {
         {/* Right arrow (carousel) */}
         {currentIndex < (length - 1) &&
           <button onClick={next} className='right-arrow'>
-            &gt;
+            &gt
           </button>}
       </div>
     </div>
   )
 }
 
-export default Carousel;
+export default Carousel

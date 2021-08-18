@@ -1,6 +1,5 @@
-import { data } from '../lib/data/line';
-import React from 'react';
-import useMediaQuery from '../lib/hooks/useMediaQuery'
+import { data } from '../lib/data/line'
+import React from 'react'
 import {
   LineChart,
   Line,
@@ -9,10 +8,9 @@ import {
   CartesianGrid,
   Tooltip,
   Legend
-} from 'recharts';
+} from 'recharts'
 
 
-const isDesktop = useMediaQuery('(min-width: 1100px)')
 class LineGraph extends React.Component {
   render() {
     return (
@@ -21,9 +19,14 @@ class LineGraph extends React.Component {
         width={1000}
         height={450}
         data={data}
-        margin={{ top: 20, right: 100, left: 30, bottom: 20 }}
+        margin={{ 
+          top: 20, 
+          right: 100, 
+          left: 30, 
+          bottom: 20
+        }}
       >
-        <CartesianGrid strokeDasharray='3 3' />
+        <CartesianGrid strokeDasharray='6 3' />
         <XAxis dataKey='name' />
         <YAxis />
         <Tooltip />
@@ -33,39 +36,59 @@ class LineGraph extends React.Component {
           layout='vertical'
           verticalAlign='middle'
         />
-        <Line 
-          type='monotone' 
-          dataKey='Total' 
-          stroke='#485696' 
-          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        <Line
+          type='monotone'
+          dataKey='Total'
+          stroke='#485696'
+          activeDot={{
+            stroke: '#272d2dff',
+            strokeWidth: 1,
+            r: 6
+          }}
         />
-        <Line 
-          type='monotone' 
-          dataKey='Heroin' 
-          stroke='#A8293E' 
-          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        <Line
+          type='monotone'
+          dataKey='Heroin'
+          stroke='#A8293E'
+          activeDot={{
+            stroke: '#272d2dff',
+            strokeWidth: 1,
+            r: 6
+          }}
         />
-        <Line 
-          type='monotone' 
-          dataKey='Natural-synth' 
-          stroke='#12ba41' 
-          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        <Line
+          type='monotone'
+          dataKey='Natural-synth'
+          stroke='#12ba41'
+          activeDot={{
+            stroke: '#272d2dff',
+            strokeWidth: 1,
+            r: 6
+          }}
         />
-        <Line 
-          type='monotone' 
-          dataKey='Methadone' 
-          stroke='#0b857f' 
-          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        <Line
+          type='monotone'
+          dataKey='Methadone'
+          stroke='#0b857f'
+          activeDot={{
+            stroke: '#272d2dff',
+            strokeWidth: 1,
+            r: 6
+          }}
         />
-        <Line 
-          type='monotone' 
-          dataKey='Other' 
-          stroke='#D3199B' 
-          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        <Line
+          type='monotone'
+          dataKey='Other'
+          stroke='#D3199B'
+          activeDot={{
+            stroke: '#272d2dff',
+            strokeWidth: 1,
+            r: 6
+          }}
         />
       </LineChart>
     )
-  };
+  }
 }
 
-export default LineGraph;
+export default LineGraph

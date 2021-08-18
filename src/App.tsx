@@ -4,7 +4,7 @@ import LineGraph from './components/LineGraph'
 import AreaGraph from './components/AreaGraph'
 import PieGraph from './components/PieGraph'
 import Carousel from './components/Carousel'
-import useMediaQuery from './lib/hooks/useMediaQuery'
+// import useMediaQuery from './lib/hooks/useMediaQuery'
 import './scss/App.scss'
 
 const titles = [
@@ -15,7 +15,7 @@ const titles = [
 
 const App = () => {
   const [title] = useState<string>(titles[0])
-  const isDesktop = useMediaQuery('(min-width: 960px)')
+  // const isDesktop = useMediaQuery('(min-width: 960px)')
   // [title, setTitle]
 
   return (
