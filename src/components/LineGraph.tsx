@@ -25,12 +25,42 @@ class LineGraph extends React.Component {
         <XAxis dataKey='name' />
         <YAxis />
         <Tooltip />
-        <Legend id='legend' />
-        <Line type='monotone' dataKey='Total' stroke='#485696' />
-        <Line type='monotone' dataKey='Heroin' stroke='#A8293E' />
-        <Line type='monotone' dataKey='Natural-synth' stroke='#12ba41' />
-        <Line type='monotone' dataKey='Methadone' stroke='#0b857f' />
-        <Line type='monotone' dataKey='Other' stroke='#D3199B' />
+        <Legend
+          id='legend'
+          align='left'
+          layout='vertical'
+          verticalAlign='middle'
+        />
+        <Line 
+          type='monotone' 
+          dataKey='Total' 
+          stroke='#485696' 
+          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        />
+        <Line 
+          type='monotone' 
+          dataKey='Heroin' 
+          stroke='#A8293E' 
+          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        />
+        <Line 
+          type='monotone' 
+          dataKey='Natural-synth' 
+          stroke='#12ba41' 
+          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        />
+        <Line 
+          type='monotone' 
+          dataKey='Methadone' 
+          stroke='#0b857f' 
+          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        />
+        <Line 
+          type='monotone' 
+          dataKey='Other' 
+          stroke='#D3199B' 
+          activeDot={{ stroke: '#272d2dff', strokeWidth: 1, r: 6 }}
+        />
       </LineChart>
     )
   };
