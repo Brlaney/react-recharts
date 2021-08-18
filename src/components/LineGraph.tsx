@@ -31,7 +31,6 @@ class LineGraph extends React.Component {
         <YAxis />
         <Tooltip />
         <Legend
-          id='legend'
           align='left'
           layout='vertical'
           verticalAlign='middle'

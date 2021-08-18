@@ -16,9 +16,9 @@ class AreaGraph extends React.Component {
     return (
       <div id='areaChart'>
 
-        {/* Area chart 1: No. of cases in the US */}
+        {/* Area chart 1: No. of cases in TN */}
         <h2 id='titleOne'>
-          Number of cases in the United States
+          Number of cases in Tennessee
         </h2>
         <ResponsiveContainer width='100%' height={200}>
           <AreaChart
@@ -53,9 +53,9 @@ class AreaGraph extends React.Component {
           </AreaChart>
         </ResponsiveContainer>
 
-        {/* Area chart 2: No. of fatalities in the US */}
+        {/* Area chart 2: No. of fatalities in TN */}
         <h2 id='titleTwo'>
-          Fatalities due to COVID-19 in the United States
+          Fatalities due to COVID-19 in Tennessee
         </h2>
         <ResponsiveContainer width='100%' height={200}>
           <AreaChart

@@ -4,6 +4,7 @@ import {
   PieChart,
   Pie,
   Cell,
+  Legend,
 } from 'recharts'
 
 type PieProps = {
@@ -46,7 +47,21 @@ const renderCustomizedLabel = ({
 class PieGraph extends React.Component {
   render() {
     return (
-      <PieChart width={1000} height={450}>
+      <PieChart
+        width={800}
+        height={450}
+        margin={{ 
+          top: 20, 
+          right: 20, 
+          left: 190, 
+          bottom: 20
+        }}
+      >
+        <Legend
+          align='left'
+          layout='vertical'
+          verticalAlign='middle'
+        />
         <Pie
           data={data}
           cx='50%'

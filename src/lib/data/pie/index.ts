@@ -3,8 +3,8 @@ export const colors = [
 ];
 
 export const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 330 },
-  { name: 'Group C', value: 270 },
-  { name: 'Group D', value: 180 },
+  { name: 'Male', value: 400 },
+  { name: 'Female', value: 330 },
+  { name: 'Younger than 18', value: 270 },
+  { name: 'Older than 60', value: 180 },
 ];

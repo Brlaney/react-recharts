@@ -4,6 +4,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   .carousel-wrapper {
     display: flex;
@@ -39,6 +41,7 @@
       height: 100%;
 
       .carousel-content {
+        width: 100%;
         display: flex;
         transition: all 250ms linear;
         -ms-overflow-style: none;
