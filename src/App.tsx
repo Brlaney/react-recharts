@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
-// import SyncedGraph from './components/SyncedGraph'
+import BarGraph from './components/BarGraph'
 import LineGraph from './components/LineGraph'
 import AreaGraph from './components/AreaGraph'
 import PieGraph from './components/PieGraph'
 import Carousel from './components/Carousel'
-// import useMediaQuery from './lib/hooks/useMediaQuery'
 import './scss/App.scss'
 
+// import SyncedGraph from './components/SyncedGraph'
+// import useMediaQuery from './lib/hooks/useMediaQuery'
+
+
 const titles = [
+  'Abortion data in the United States',
   'Opiod Overdoses in the United States',
   'Covid-19 Data in Tennessee',
   'Sample Pie Chart'
@@ -33,6 +37,7 @@ const App = () => {
         >
           <div className='parent'>
             <Carousel>
+              <BarGraph />
               <LineGraph />
               <AreaGraph />
               <PieGraph />
