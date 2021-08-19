@@ -25,10 +25,10 @@ class BarOne extends React.Component {
         <h2 id='title'>Age: {title.t1}. Procedure type: {title.t2}</h2>
         <ResponsiveContainer width='100%' height='100%'>
           <BarChart
-            width={1200}
+            width={1350}
             height={450}
             data={data}
-            margin={{ top: 20, right: 100, left: 30, bottom: 40 }}
+            margin={{ top: 20, right: 100, left: 100, bottom: 20 }}
           >
             <CartesianGrid strokeDasharray='6 3' />
             <XAxis dataKey='State' />
