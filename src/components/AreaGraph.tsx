@@ -23,16 +23,11 @@ class AreaGraph extends React.Component {
         <ResponsiveContainer width='100%' height={200}>
           <AreaChart
             id='area'
-            width={1000}
+            width={1200}
             height={450}
             data={data}
             syncId='areaId'
-            margin={{
-              top: 20,
-              right: 100,
-              left: 100,
-              bottom: 20
-            }}
+            margin={{ top: 20, right: 100, left: 100, bottom: 20 }}
           >
             <defs>
               <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>

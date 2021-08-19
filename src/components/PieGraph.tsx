@@ -48,8 +48,8 @@ class PieGraph extends React.Component {
   render() {
     return (
       <PieChart
-        width={800}
-        height={450}
+        width={1100}
+        height={500}
         margin={{ 
           top: 20, 
           right: 20, 

@@ -1,5 +1,13 @@
 import React, { useState } from 'react'
-import BarGraph from './components/BarGraph'
+import BarOne from './components/BarGraphs/BarOne'
+import BarTwo from './components/BarGraphs/BarTwo'
+import BarThree from './components/BarGraphs/BarThree'
+import BarFour from './components/BarGraphs/BarFour'
+import BarFive from './components/BarGraphs/BarFive'
+import BarSix from './components/BarGraphs/BarSix'
+import BarSeven from './components/BarGraphs/BarSeven'
+import BarEight from './components/BarGraphs/BarEight'
+import BarNine from './components/BarGraphs/BarNine'
 import LineGraph from './components/LineGraph'
 import AreaGraph from './components/AreaGraph'
 import PieGraph from './components/PieGraph'
@@ -37,7 +45,15 @@ const App = () => {
         >
           <div className='parent'>
             <Carousel>
-              <BarGraph />
+              <BarOne />
+              <BarTwo />
+              <BarThree />
+              <BarFour />
+              <BarFive />
+              <BarSix />
+              <BarSeven />
+              <BarEight />
+              <BarNine />
               <LineGraph />
               <AreaGraph />
               <PieGraph />

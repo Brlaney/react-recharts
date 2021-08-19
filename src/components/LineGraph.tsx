@@ -16,15 +16,10 @@ class LineGraph extends React.Component {
     return (
       <LineChart
         id='line'
-        width={1000}
-        height={450}
+        width={1200}
+        height={500}
         data={data}
-        margin={{ 
-          top: 20, 
-          right: 100, 
-          left: 30, 
-          bottom: 20
-        }}
+        margin={{ top: 40, right: 110, left: 100, bottom: 20 }}
       >
         <CartesianGrid strokeDasharray='6 3' />
         <XAxis dataKey='name' />
