@@ -23,7 +23,7 @@ class AreaGraph extends React.Component {
         <ResponsiveContainer width='100%' height={200}>
           <AreaChart
             id='area'
-            width={1200}
+            width={1350}
             height={450}
             data={data}
             syncId='areaId'
