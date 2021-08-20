@@ -12,7 +12,7 @@ import {
 } from 'recharts'
 
 export const title = {
-  t1: '<= 13 weeks gestation',
+  t1: '<= 13',
   t2: 'Surgical',
   total: 289931,
   percent: 52.1
