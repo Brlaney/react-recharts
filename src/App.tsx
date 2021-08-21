@@ -21,7 +21,7 @@ import './scss/App.scss'
 const titles = [
   'Abortion data in the United States',
   'Opiod Overdoses in the United States',
-  'Covid-19`````````````````````````````````````````````````````````` Data in Tennessee',
+  'Covid-19 Data in Tennessee',
   'Sample Pie Chart'
 ]
 
